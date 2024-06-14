@@ -1,0 +1,51 @@
+
+  .genre-filter label {
+    margin: 0 10px;
+  }
+  .custom-button:hover {
+    background-color: lightcoral; /* Light red background on hover */
+  }
+  .custom-button {
+    background-color: gray;  /* Default gray background */
+    color: white;            /* Text color */
+    border: none;            /* No border */
+    padding: 10px 20px;      /* Padding for the button */
+    border-radius: 5px;      /* Rounded corners */
+    cursor: pointer;         /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  .btn {
+    border: 0px solid gray;
+    background-color: gray;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .success {
+    border-color: gray;
+  }
+  
+  .success:hover {
+    background-color: lightcoral;
+    color: white;
+  }
+  .tab-btn{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+ 
+  .tab-title{
+    z-index: 999999;
+    position: relative;
+}
+.button-nominee{
+   
+  background-color:  #1E4679;
+  min-width: 175px !important;
+  color: white;
+  border-radius: 0px !important;
+  }

@@ -1,0 +1,14 @@
+<div class="container">
+  <app-movie-filter
+    (genreSelected)="onGenreSelected($event)"
+  ></app-movie-filter>
+  <div class="row">
+    <div class="movie-list">
+      <app-movie-card
+        class="col-lg-3 col-md-4 col-sm-6 col-12"
+        *ngFor="let movie of movies"
+        [movie]="movie"
+      ></app-movie-card>
+    </div>
+  </div>
+</div>

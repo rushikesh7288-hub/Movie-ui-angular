@@ -1,0 +1,28 @@
+<!-- <div class="genre-filter">
+  <div class="tab-btn">
+    <ul *ngFor="let genre of genres">
+      <button class=" btn success btn-group"
+       type="button" 
+        [value]="genre.id" (click)="onGenreChange($event, genre.id)"
+      >
+        {{ genre.name }}</button>
+    </ul>
+
+   
+  </div>
+
+</div> -->
+<mat-card class="mt-4 mb-4">
+  <mat-tab-group >
+    <mat-tab *ngFor="let genre of genres">
+      <ng-template mat-tab-label> <button
+        class=" btn success btn-group"
+        type="button" 
+        [value]="genre.id"
+        (click)="onGenreChange($event, genre.id)"
+      >
+    {{ genre.name }}
+      </button></ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

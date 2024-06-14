@@ -1,0 +1,17 @@
+.container {
+    padding: 20px;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .movie-list {
+      justify-content: flex-start;
+    }
+  }
+  
